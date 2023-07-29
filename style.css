@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased; /*estas propriedades são para deixar os traços da página mais bonitas */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-family: Mulish ;
+}
+
+body {
+  background: var(--platform-aliases-background, #121214);
+  padding: 72px 104px ;
+  display: grid;
+  justify-content: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3,370px);
+  
+  row-gap: 48px;
+  column-gap: 60px;
+
+  margin-top: 62px;
+  
+
+}
+
+.card {
+  overflow: hidden;
+  border: 2px solid var(--platform-aliases-shape-terciria, #323238);
+  border-radius: 8px;
+  background: var(--platform-aliases-shape-principal, #202024);
+
+}
+.card h2 {
+  color: #E1E1E6;
+  font-weight: 900;
+  font-size: 36px;
+  padding: 24px 32px 0;
+}
+
+.card p {
+  color: #C4C4CC;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 24px 32px 32px;
+}
+
+header h1 {
+  color: var(--brand-colors-explorer-mid, #02799D);
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 72px;
+}
+
+header p {
+  color: var(--platform-aliases-texto-base, #C4C4CC);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+}
